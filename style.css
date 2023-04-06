@@ -1,139 +1,111 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 .svg-container {
-    position: relative;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
- 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .layer-1 {
-    z-index: 8;
-    background-image: url("layer-1.svg");
+  z-index: 8;
+  background-image: url("layer-1.svg");
 }
 
 .layer-2 {
-    z-index: 7;
-    background-image: url("layer-2.svg");
+  z-index: 7;
+  background-image: url("layer-2.svg");
 }
 
 .layer-3 {
-    z-index: 6;
-    background-image: url("layer-3.svg");
+  z-index: 6;
+  background-image: url("layer-3.svg");
 }
 
 .layer-4 {
-    z-index: 5;
-    background-image: url("layer-4.svg");
+  z-index: 5;
+  background-image: url("layer-4.svg");
 }
 
 .layer-5 {
-    z-index: 4;
-    background-image: url("layer-5.svg");
+  z-index: 4;
+  background-image: url("layer-5.svg");
 }
 
 .layer-6 {
-    z-index: 3;
-    background-image: url("layer-6.svg");
+  z-index: 3;
+  background-image: url("layer-6.svg");
 }
 
 .layer-7 {
-    z-index: 2;
-    background-image: url("layer-7.svg");
+  z-index: 2;
+  background-image: url("layer-7.svg");
 }
 
 .layer-8 {
-    z-index: 1;
-    background-image: url("layer-8.svg");
-    background-size: 2000px;
-}
-
-.boat-1 {
-    z-index: 5;
-    background-image: url("boat-1.svg");
-    left: -50px;
-    animation: boat-scale 15s forwards ease-out ;
-    transform-origin: center top;
-}
-
-.boat-2 {
-    z-index: 4;
-    background-image: url("boat-2.svg");
-    left: -80px;
-    top: -80px;
-    animation: boat-scale 20s forwards ease-out ;
-    transform-origin: center top;
-}
-
-.boat-3 {
-    z-index: 3;
-    background-image: url("boat-3.svg");
-    top: -50px;
-    left: 50px;
-    animation: boat-scale 16s forwards ease-out;
-    transform-origin: center top;
+  z-index: 1;
+  background-image: url("layer-8.svg");
+  background-size: 2000px;
 }
 
 .section-2 {
-    text-align: center;
-    color: white;
-    background-color: #0F1E25;
-    padding: 100px 0;
-    height: 100vh;
-    background: linear-gradient(#0F1E25 50%, #0B3835);
-
+  text-align: center;
+  color: white;
+  background-color: #0f1e25;
+  padding: 100px 0;
+  height: 100vh;
+  background: linear-gradient(#0f1e25 50%, #0b3835);
 }
 
 h1 {
-    margin: 0 auto;
-    font-family: belda-normal, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 3em;
-    border-bottom: 4px solid rgb(185, 200, 102);
-    width: 400px;
-    border-radius: 20px;
+  margin: 0 auto;
+  font-family: belda-normal, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 3em;
+  border-bottom: 4px solid rgb(185, 200, 102);
+  width: 400px;
+  border-radius: 20px;
 }
 
 p {
-    font-family: belda-normal, sans-serif;
-    margin: 150px 0;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: capitalize;
-    font-size: 1.7em;
-    color: rgb(247, 255, 193);
+  font-family: belda-normal, sans-serif;
+
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+  font-size: 1.7em;
+  color: rgb(247, 255, 193);
 }
 .fa-solid {
-    margin-right: 50px;
-    color: rgb(0, 194, 149);
+  margin-right: 50px;
+  color: rgb(0, 194, 149);
 }
 
-
 @keyframes boat-scale {
-   100% {transform: translate(0px,50px)}
+  100% {
+    transform: translate(0px, 50px);
+  }
 }
